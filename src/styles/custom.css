@@ -1,0 +1,53 @@
+/* Custom styles for EverHytale documentation */
+
+/* Dark mode (default) - emerald accent colors */
+:root {
+  --sl-color-accent-low: #064e3b;
+  --sl-color-accent: #10b981;
+  --sl-color-accent-high: #6ee7b7;
+}
+
+/* Light mode - emerald accent colors */
+:root[data-theme='light'] {
+  --sl-color-accent-low: #d1fae5;
+  --sl-color-accent: #059669;
+  --sl-color-accent-high: #065f46;
+}
+
+/* Plugin cards styling */
+.sl-markdown-content .plugin-card {
+  border: 1px solid var(--sl-color-gray-5);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  transition: border-color 0.2s ease;
+}
+
+.sl-markdown-content .plugin-card:hover {
+  border-color: var(--sl-color-accent);
+}
+
+/* Command reference styling */
+.sl-markdown-content .command-box {
+  background-color: var(--sl-color-gray-6);
+  border-left: 3px solid var(--sl-color-accent);
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.sl-markdown-content .command-box code {
+  color: var(--sl-color-accent-high);
+}
+
+/* Permission badges */
+.sl-markdown-content .permission-badge {
+  display: inline-block;
+  background-color: var(--sl-color-accent-low);
+  color: var(--sl-color-accent-high);
+  padding: 0.125rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  margin-left: 0.5rem;
+}

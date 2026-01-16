@@ -1,0 +1,69 @@
+---
+title: Introduction
+description: Official documentation for EverHytale plugins and infrastructure for Hytale servers
+---
+
+import { Card, CardGrid, LinkCard } from '@astrojs/starlight/components';
+
+Welcome to the EverHytale documentation. Here you'll find everything you need to deploy Hytale servers and extend them with our plugins.
+
+## Quick Start
+
+<CardGrid>
+	<LinkCard title="Deploy with Docker" href="/infrastructure/docker/" description="Get a Hytale server running in minutes" />
+	<LinkCard title="Install EverEssentials" href="/plugins/everessentials/overview/" description="Add administration tools to your server" />
+</CardGrid>
+
+## Infrastructure
+
+Deploy your Hytale server using our production-ready Docker images and Helm charts.
+
+<CardGrid>
+	<Card title="Docker" icon="seti:docker">
+		Deploy your Hytale server with Docker in minutes. Pre-built images with automatic updates.
+		
+		[Docker Guide](/infrastructure/docker/) · [Docker Compose](/infrastructure/docker-compose/)
+	</Card>
+	<Card title="Kubernetes" icon="seti:kubernetes">
+		Production-grade deployment with Helm charts. Scaling, persistence, and Gateway API support.
+		
+		[Kubernetes Guide](/infrastructure/kubernetes/)
+	</Card>
+</CardGrid>
+
+## Plugins
+
+<CardGrid>
+	<Card title="EverEssentials" icon="rocket">
+		Complete administration plugin with player management, teleportation, kick, ban, and interactive admin panel.
+		
+		[Overview](/plugins/everessentials/overview/) · [Commands](/plugins/everessentials/commands/)
+	</Card>
+	<Card title="More coming soon..." icon="add-document">
+		More plugins are in development to enhance your server experience.
+	</Card>
+</CardGrid>
+
+## Features
+
+| Feature | Description |
+|---------|-------------|
+| **Admin Panel** | Interactive UI to manage players in real-time |
+| **Moderation** | Kick, ban, mute, and player monitoring |
+| **Teleportation** | Advanced teleportation between players and locations |
+| **Docker Images** | Multi-arch images with automatic Hytale version updates |
+| **Helm Charts** | Production-ready Kubernetes deployment |
+
+## Community
+
+- **Discord**: [discord.gg/aDdR2nN9](https://discord.gg/aDdR2nN9)
+- **GitHub**: [github.com/everhytale](https://github.com/everhytale)
+
+## Repositories
+
+| Repository | Description |
+|------------|-------------|
+| [everhytale/dockers](https://github.com/everhytale/dockers) | Docker images for Hytale servers |
+| [everhytale/charts](https://github.com/everhytale/charts) | Helm charts for Kubernetes |
+| [everhytale/everessentials](https://github.com/everhytale/everessentials) | Administration plugin |
+| [everhytale/site](https://github.com/everhytale/site) | This documentation |
